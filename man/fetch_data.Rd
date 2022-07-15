@@ -13,10 +13,11 @@ fetch_data(
 Inferred from env var \code{CKAN_URL}, default: "https://data.dbca.wa.gov.au".}
 }
 \description{
-Downloads all data files from CKAN and returns them as a list of individual
-tables. One data file can generate multiple tables.
+Downloads all data files from CKAN and saves individual
+tables as \code{fst} to \code{inst/data}. One data file can generate multiple tables.
 }
-\details{
-Side effect: saves data tables as \code{fst} to \code{inst/data}.
+\seealso{
+Other extract: 
+\code{\link{resume_data}()}
 }
 \concept{extract}
