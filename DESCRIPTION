@@ -1,0 +1,21 @@
+Package: waRb
+Title: WAHerb data migration from Texpress to Specify7
+Version: 0.0.0.9000
+Authors@R: 
+     c(person(given = c("Florian", "W."),
+             family = "Mayer",
+             role = c("aut", "cre"),
+             email = "Florian.Mayer@dbca.wa.gov.au",
+             comment = c(ORCID = "0000-0003-4269-4242"))
+      )
+Description: WAHerb is the database for voucher specimens of the WA Herbarium at
+    the Department of Biodiversity, Conservation and Attractions in Western 
+    Australia. This package contains the data migration from the legacy system
+    based on Texpress to Specify7.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.0
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
