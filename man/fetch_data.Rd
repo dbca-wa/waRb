@@ -4,9 +4,19 @@
 \alias{fetch_data}
 \title{Fetch data from the Data Catalogue and return as one object}
 \usage{
-fetch_data()
+fetch_data(
+  ckan_url = Sys.getenv("CKAN_URL", unset = "https://data.dbca.wa.gov.au")
+)
+}
+\arguments{
+\item{ckan_url}{The URL of the CKAN data catalogue to fetch data from.
+Inferred from env var \code{CKAN_URL}, default: "https://data.dbca.wa.gov.au".}
 }
 \description{
-Fetch data from the Data Catalogue and return as one object
+Downloads all data files from CKAN and returns them as a list of individual
+tables. One data file can generate multiple tables.
+}
+\details{
+Side effect: saves data tables as \code{fst} to \code{inst/data}.
 }
 \concept{extract}

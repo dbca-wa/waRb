@@ -21,11 +21,37 @@ devtools::install_github("dbca-wa/waRb")
 
 ## Run
 
+Accessing and writing back files from CKAN requires to be in the DBCA
+intranet and to have the following variables defined in your
+`~/.Renviron`. The CKAN API key is accessible to logged in users on
+their profile page.
+
+``` r
+CKAN_URL="https://data.dbca.wa.gov.au"
+CKAN_API_KEY="..."
+```
+
+Open the `~/.Renviron`:
+
+``` r
+usethis::edit_r_environ()
+```
+
 The main data migration is a `targets` workflow.
 
 ``` r
 library(waRb)
 ## tar_make(...)
+
+# Download data from CKAN to local fst snapshots
+fetch_data() 
+
+# Load local fst snapshots into memory
+resume_data()
+
+# Inspect data, generate QA reports as Rmd
+# Transform data into target format
+# Upload data into Specify7 API
 ```
 
 ## Contribute

@@ -27,5 +27,8 @@ Config/testthat/edition: 3
 URL: https://dbca-wa.github.io/waRb/
 Imports: 
     ckanr (>= 0.6.0),
+    fs,
+    fst,
     knitr (>= 1.39),
+    readr,
     targets (>= 0.12.1)
