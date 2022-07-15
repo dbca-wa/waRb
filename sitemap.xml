@@ -16,9 +16,15 @@
     <loc>https://dbca-wa.github.io/waRb/index.html</loc>
   </url>
   <url>
+    <loc>https://dbca-wa.github.io/waRb/news/index.html</loc>
+  </url>
+  <url>
     <loc>https://dbca-wa.github.io/waRb/reference/fetch_data.html</loc>
   </url>
   <url>
     <loc>https://dbca-wa.github.io/waRb/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/waRb/reference/resume_data.html</loc>
   </url>
 </urlset>
