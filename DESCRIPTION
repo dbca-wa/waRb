@@ -14,9 +14,18 @@ Description: WAHerb is the database for voucher specimens of the WA Herbarium at
     based on Texpress to Specify7.
 License: MIT + file LICENSE
 Encoding: UTF-8
+Language: en-AU
+VignetteBuilder: 
+    knitr
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.0
+Depends: 
+    R (>= 4.2)
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 URL: https://dbca-wa.github.io/waRb/
+Imports: 
+    ckanr (>= 0.6.0),
+    knitr (>= 1.39),
+    targets (>= 0.12.1)
